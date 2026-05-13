@@ -3,92 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MRAPGROUP | Enterprise IT Solutions</title>
+<title>MRAPGROUP | Enterprise IT Solutions & Mobility Management</title>
 
 <style>
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f4f6f9;
-    color:#222;
-    line-height:1.6;
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+background:#f4f6f9;
+color:#222;
+line-height:1.6;
+scroll-behavior:smooth;
 }
 
 header{
-    background:#0d1b2a;
-    color:white;
-    padding:40px 20px;
-    text-align:center;
+background:#0d1b2a;
+color:white;
+padding:40px 20px;
+text-align:center;
 }
 
 header h1{
-    margin:0;
-    font-size:36px;
+margin:0;
+font-size:40px;
 }
 
 header p{
-    font-size:18px;
-    margin-top:10px;
+font-size:18px;
+margin-top:10px;
 }
 
 nav{
-    background:#1b263b;
-    padding:12px;
-    text-align:center;
+background:#1b263b;
+padding:14px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
 }
 
 section{
-    padding:40px 20px;
-    max-width:1000px;
-    margin:auto;
+max-width:1000px;
+margin:25px auto;
+padding:30px;
+background:white;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
 h2{
-    color:#0d1b2a;
-    margin-bottom:20px;
+color:#0d1b2a;
+margin-bottom:15px;
 }
 
-.card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    margin-bottom:25px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
-}
-
-footer{
-    background:#0d1b2a;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
+h3{
+margin-top:25px;
+color:#1b263b;
 }
 
 ul{
-    padding-left:20px;
+padding-left:20px;
 }
 
-.hero{
-    text-align:center;
-    padding:60px 20px;
-    background:white;
-}
-
-.hero h2{
-    font-size:32px;
+footer{
+background:#0d1b2a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
 }
 
 .contact-box{
-    background:#e9f1ff;
-    padding:20px;
-    border-radius:10px;
+background:#eef4ff;
+padding:20px;
+border-radius:8px;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h2{
+font-size:32px;
+}
+
+/* Scroll To Top Button */
+
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:99;
+font-size:20px;
+border:none;
+outline:none;
+background:#0d1b2a;
+color:white;
+cursor:pointer;
+padding:14px 18px;
+border-radius:50%;
+box-shadow:0 2px 8px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+#topBtn:hover{
+background:#1b263b;
+transform:scale(1.1);
 }
 
 </style>
@@ -97,253 +131,299 @@ ul{
 <body>
 
 <header>
-    <h1>MRAPGROUP</h1>
-    <p>Enterprise IT Solutions & Mobility Management</p>
+<h1>MRAPGROUP</h1>
+<p>Enterprise IT Solutions & Mobility Management</p>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#privacy">Privacy Policy</a>
-    <a href="#terms">Terms</a>
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact Us</a>
+<a href="#privacy">Privacy Policy</a>
+<a href="#terms">Terms</a>
 </nav>
 
 <section id="home" class="hero">
-    <h2>Welcome to MRAPGROUP</h2>
-    <p>
-        MRAPGROUP is an organization focused on enterprise IT solutions,
-        Android Enterprise mobility management, device deployment,
-        and centralized business technology operations.
-    </p>
 
-    <p>
-        We assist organizations with secure device management,
-        Android Enterprise onboarding, MDM deployment,
-        enterprise provisioning, and scalable IT infrastructure solutions.
-    </p>
+<h2>Welcome to MRAPGROUP</h2>
 
-    <p>
-        Our objective is to help businesses manage devices efficiently,
-        securely, and professionally for long-term operational growth.
-    </p>
+<p>
+MRAPGROUP is an organization focused on enterprise IT solutions,
+Android Enterprise mobility management, device deployment,
+and centralized business technology operations.
+</p>
+
+<p>
+We assist organizations with secure device management,
+Android Enterprise onboarding, MDM deployment,
+enterprise provisioning, and scalable IT infrastructure solutions.
+</p>
+
+<p>
+Our objective is to help businesses manage devices efficiently,
+securely, and professionally for long-term operational growth.
+</p>
+
 </section>
 
 <section id="about">
-    <div class="card">
-        <h2>About Us</h2>
 
-        <p>
-            MRAPGROUP is an MSME-registered organization working toward
-            enterprise mobility management and business technology solutions.
-        </p>
+<h2>About Us</h2>
 
-        <p>
-            We are building enterprise-grade deployment and management systems
-            for Android devices used in business operations,
-            workforce productivity, centralized administration,
-            and secure device provisioning.
-        </p>
+<h3>Who We Are</h3>
 
-        <h3>We aim to implement scalable and secure solutions using:</h3>
+<p>
+MRAPGROUP is an MSME-registered organization working toward
+enterprise mobility management and business technology solutions.
+</p>
 
-        <ul>
-            <li>Android Enterprise</li>
-            <li>Mobile Device Management (MDM)</li>
-            <li>Zero-Touch Enrollment</li>
-            <li>Samsung Knox Enrollment</li>
-            <li>Business Device Provisioning</li>
-            <li>Cloud-based administration tools</li>
-            <li>Enterprise mobility solutions</li>
-        </ul>
-    </div>
+<p>
+We are building enterprise-grade deployment and management systems
+for Android devices used in business operations,
+workforce productivity, centralized administration,
+and secure device provisioning.
+</p>
+
+<h3>We aim to implement scalable and secure solutions using:</h3>
+
+<ul>
+<li>Android Enterprise</li>
+<li>Mobile Device Management (MDM)</li>
+<li>Zero-Touch Enrollment</li>
+<li>Samsung Knox Enrollment</li>
+<li>Business Device Provisioning</li>
+<li>Cloud-based administration tools</li>
+<li>Enterprise mobility solutions</li>
+</ul>
+
 </section>
 
 <section id="services">
 
-    <div class="card">
-        <h2>Enterprise Mobility Management</h2>
+<h2>Our Services</h2>
 
-        <p>
-            We help organizations deploy and manage Android devices
-            using modern enterprise mobility management solutions.
-        </p>
-    </div>
+<h3>Enterprise Mobility Management</h3>
 
-    <div class="card">
-        <h2>Android Enterprise Deployment</h2>
+<p>
+We help organizations deploy and manage Android devices
+using modern enterprise mobility management solutions.
+</p>
 
-        <p>
-            Support for Android Enterprise onboarding,
-            managed provisioning, and centralized policy management.
-        </p>
-    </div>
+<h3>Android Enterprise Deployment</h3>
 
-    <div class="card">
-        <h2>Mobile Device Management (MDM)</h2>
+<p>
+Support for Android Enterprise onboarding,
+managed provisioning, and centralized policy management.
+</p>
 
-        <ul>
-            <li>ManageEngine MDM</li>
-            <li>Android Enterprise</li>
-            <li>Business policy management</li>
-            <li>Device compliance</li>
-            <li>Remote administration</li>
-        </ul>
-    </div>
+<h3>Mobile Device Management (MDM)</h3>
 
-    <div class="card">
-        <h2>Device Enrollment & Provisioning</h2>
+<p>Deployment and configuration support for:</p>
 
-        <ul>
-            <li>Zero-Touch enrollment guidance</li>
-            <li>Samsung Knox Mobile Enrollment (KME)</li>
-            <li>Enterprise provisioning workflows</li>
-            <li>Business device setup</li>
-        </ul>
-    </div>
+<ul>
+<li>ManageEngine MDM</li>
+<li>Android Enterprise</li>
+<li>Business policy management</li>
+<li>Device compliance</li>
+<li>Remote administration</li>
+</ul>
 
-    <div class="card">
-        <h2>IT Administration & Operations</h2>
+<h3>Device Enrollment & Provisioning</h3>
 
-        <p>
-            Business-focused device administration and operational support
-            for secure workforce deployment.
-        </p>
-    </div>
+<p>Support for:</p>
+
+<ul>
+<li>Zero-Touch enrollment guidance</li>
+<li>Samsung Knox Mobile Enrollment (KME)</li>
+<li>Enterprise provisioning workflows</li>
+<li>Business device setup</li>
+</ul>
+
+<h3>IT Administration & Operations</h3>
+
+<p>
+Business-focused device administration and operational support
+for secure workforce deployment.
+</p>
 
 </section>
 
 <section>
 
-    <div class="card">
-        <h2>Why Choose MRAPGROUP</h2>
+<h2>Why Choose MRAPGROUP</h2>
 
-        <ul>
-            <li>Enterprise-focused approach</li>
-            <li>Scalable deployment planning</li>
-            <li>Secure device management practices</li>
-            <li>Centralized administration model</li>
-            <li>Professional onboarding processes</li>
-            <li>Long-term operational planning</li>
-        </ul>
-    </div>
+<ul>
+<li>Enterprise-focused approach</li>
+<li>Scalable deployment planning</li>
+<li>Secure device management practices</li>
+<li>Centralized administration model</li>
+<li>Professional onboarding processes</li>
+<li>Long-term operational planning</li>
+</ul>
 
 </section>
 
 <section>
 
-    <div class="card">
-        <h2>Organization Information</h2>
+<h2>Organization Information</h2>
 
-        <p><strong>Organization Name:</strong> MRAPGROUP</p>
-        <p><strong>Business Type:</strong> MSME Registered Organization</p>
-        <p><strong>Contact Person:</strong> Anuj Prasad Sinha</p>
-        <p><strong>Official Email:</strong> ITAdmin@mrapgroup.in</p>
-        <p><strong>Location:</strong> BIT Ranchi, India</p>
-    </div>
+<p><strong>Organization Name:</strong> MRAPGROUP</p>
+
+<p><strong>Business Type:</strong> MSME Registered Organization</p>
+
+<p><strong>Contact Person:</strong> Anuj Prasad Sinha</p>
+
+<p><strong>Official Email:</strong> ITAdmin@mrapgroup.in</p>
+
+<p><strong>Location:</strong> BIT Ranchi, India</p>
 
 </section>
 
 <section id="contact">
 
-    <div class="card contact-box">
-        <h2>Contact Us</h2>
+<h2>Contact Us</h2>
 
-        <p>
-            For enterprise onboarding, business mobility solutions,
-            Android Enterprise setup, or IT administration support,
-            feel free to contact us.
-        </p>
+<div class="contact-box">
 
-        <p><strong>Email:</strong> anujprasad586@gmail.com</p>
-        <p><strong>Email:</strong> ITAdmin@mrapgroup.in</p>
-        <p><strong>Contact Person:</strong> Anuj Prasad Sinha</p>
-        <p><strong>Organization:</strong> MRAPGROUP</p>
-    </div>
+<p>
+For enterprise onboarding, business mobility solutions,
+Android Enterprise setup, or IT administration support,
+feel free to contact us.
+</p>
+
+<p><strong>Email:</strong> anujprasad586@gmail.com</p>
+
+<p><strong>Email:</strong> ITAdmin@mrapgroup.in</p>
+
+<p><strong>Contact Person:</strong> Anuj Prasad Sinha</p>
+
+<p><strong>Organization:</strong> MRAPGROUP</p>
+
+</div>
 
 </section>
 
 <section id="privacy">
 
-    <div class="card">
-        <h2>Privacy Policy</h2>
+<h2>Privacy Policy</h2>
 
-        <p>
-            MRAPGROUP respects the privacy of users,
-            customers, and business partners.
-        </p>
+<p>
+MRAPGROUP respects the privacy of users,
+customers, and business partners.
+</p>
 
-        <p>
-            We do not sell or distribute confidential business information
-            to third parties.
-        </p>
+<p>
+We do not sell or distribute confidential business information
+to third parties.
+</p>
 
-        <p>Information shared with us is used only for:</p>
+<p>Information shared with us is used only for:</p>
 
-        <ul>
-            <li>Business communication</li>
-            <li>Enterprise onboarding</li>
-            <li>Technical support</li>
-            <li>Service coordination</li>
-            <li>Device management operations</li>
-        </ul>
+<ul>
+<li>Business communication</li>
+<li>Enterprise onboarding</li>
+<li>Technical support</li>
+<li>Service coordination</li>
+<li>Device management operations</li>
+</ul>
 
-        <p>
-            We implement reasonable administrative and technical measures
-            to protect organizational data.
-        </p>
-    </div>
+<p>
+We implement reasonable administrative and technical measures
+to protect organizational data.
+</p>
 
 </section>
 
 <section id="terms">
 
-    <div class="card">
-        <h2>Terms of Service</h2>
+<h2>Terms of Service</h2>
 
-        <p>
-            By using MRAPGROUP services or communicating with our organization,
-            you agree to use the services only for lawful business purposes.
-        </p>
+<p>
+By using MRAPGROUP services or communicating with our organization,
+you agree to use the services only for lawful business purposes.
+</p>
 
-        <p>
-            MRAPGROUP reserves the right to modify or update services,
-            policies, and operational procedures when required.
-        </p>
-    </div>
+<p>
+MRAPGROUP reserves the right to modify or update services,
+policies, and operational procedures when required.
+</p>
 
 </section>
 
 <section>
 
-    <div class="card">
-        <h2>Future Vision</h2>
+<h2>Future Vision</h2>
 
-        <p>
-            MRAPGROUP aims to expand into enterprise mobility,
-            centralized device administration,
-            secure Android deployments,
-            and scalable business technology solutions.
-        </p>
+<p>
+MRAPGROUP aims to expand into enterprise mobility,
+centralized device administration,
+secure Android deployments,
+and scalable business technology solutions.
+</p>
 
-        <p>
-            We are committed to building professional enterprise infrastructure
-            for long-term operational growth and secure digital transformation.
-        </p>
-    </div>
+<p>
+We are committed to building professional enterprise infrastructure
+for long-term operational growth and secure digital transformation.
+</p>
 
 </section>
 
 <footer>
-    <h3>MRAPGROUP Enterprise IT Solutions & Mobility Management</h3>
 
-    <p>Email: anujprasad586@gmail.com</p>
-    <p>Email: ITAdmin@mrapgroup.in</p>
-    <p>Location: BIT Ranchi, India</p>
+<h3>MRAPGROUP Enterprise IT Solutions & Mobility Management</h3>
 
-    <p>© MRAPGROUP. All rights reserved.</p>
+<p>Email: anujprasad586@gmail.com</p>
+
+<p>Email: ITAdmin@mrapgroup.in</p>
+
+<p>Location: BIT Ranchi, India</p>
+
+<p>© MRAPGROUP. All rights reserved.</p>
+
 </footer>
+
+<!-- Scroll To Top Button -->
+
+<button onclick="topFunction()" id="topBtn" title="Go to top">
+↑
+</button>
+
+<script>
+
+// Show button when scrolling
+
+let topButton = document.getElementById("topBtn");
+
+window.onscroll = function() {
+scrollFunction();
+};
+
+function scrollFunction() {
+
+if (
+document.body.scrollTop > 200 ||
+document.documentElement.scrollTop > 200
+) {
+topButton.style.display = "block";
+} else {
+topButton.style.display = "none";
+}
+
+}
+
+// Scroll smoothly to top
+
+function topFunction() {
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
 
 </body>
 </html>
