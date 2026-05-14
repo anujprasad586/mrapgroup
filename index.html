@@ -18,15 +18,13 @@ padding:0;
 font-family:Arial,sans-serif;
 background:#f4f6f9;
 color:#222;
-line-height:1.6;
+line-height:1.7;
 }
 
-/* HEADER */
-
 header{
-background:#0d1b2a;
+background:linear-gradient(135deg,#0d1b2a,#1b263b);
 color:white;
-padding:50px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
@@ -38,49 +36,46 @@ font-size:42px;
 header p{
 font-size:20px;
 margin-top:10px;
+opacity:0.95;
 }
-
-/* NAVIGATION */
 
 nav{
 background:#1b263b;
-padding:18px;
+padding:16px;
 text-align:center;
 position:sticky;
 top:0;
-z-index:1000;
+z-index:999;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 15px;
+margin:10px 15px;
 font-weight:bold;
-font-size:18px;
+display:inline-block;
+font-size:17px;
 }
 
 nav a:hover{
-color:#4ea8ff;
+color:#4da3ff;
 }
-
-/* SECTIONS */
 
 section{
 max-width:1000px;
-margin:25px auto;
-padding:30px;
+margin:30px auto;
+padding:35px;
 background:white;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+border-radius:14px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .hero{
 text-align:center;
-padding:60px 25px;
 }
 
 .hero h2{
-font-size:36px;
+font-size:34px;
 margin-bottom:20px;
 color:#0d1b2a;
 }
@@ -88,22 +83,27 @@ color:#0d1b2a;
 h2{
 color:#0d1b2a;
 margin-bottom:15px;
+font-size:30px;
 }
 
 h3{
 margin-top:25px;
 color:#1b263b;
+font-size:23px;
+}
+
+p{
+font-size:18px;
 }
 
 ul{
 padding-left:22px;
 }
 
-li{
+ul li{
 margin-bottom:10px;
+font-size:18px;
 }
-
-/* CONTACT BOX */
 
 .contact-box{
 background:#eef4ff;
@@ -111,55 +111,56 @@ padding:25px;
 border-radius:10px;
 }
 
-/* FOOTER */
-
 footer{
 background:#0d1b2a;
 color:white;
 text-align:center;
-padding:40px 20px;
-margin-top:40px;
+padding:45px 20px;
+margin-top:50px;
 }
 
 footer h3{
 color:white;
-font-size:28px;
+font-size:30px;
 margin-bottom:25px;
-line-height:1.4;
 }
 
 footer p{
-font-size:18px;
+font-size:20px;
 margin:12px 0;
 color:white;
 }
 
-/* SCROLL TO TOP BUTTON */
-
-#topBtn{
-display:none;
+.button-top,
+.button-bottom{
 position:fixed;
-bottom:25px;
 right:20px;
-z-index:999;
-font-size:24px;
+width:55px;
+height:55px;
 border:none;
-outline:none;
+border-radius:50%;
 background:#0d1b2a;
 color:white;
+font-size:24px;
 cursor:pointer;
-padding:15px 18px;
-border-radius:50%;
-box-shadow:0 4px 12px rgba(0,0,0,0.3);
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:9999;
 transition:0.3s;
 }
 
-#topBtn:hover{
+.button-top:hover,
+.button-bottom:hover{
 background:#1b263b;
-transform:scale(1.1);
+transform:scale(1.08);
 }
 
-/* MOBILE RESPONSIVE */
+.button-top{
+bottom:90px;
+}
+
+.button-bottom{
+bottom:20px;
+}
 
 @media(max-width:768px){
 
@@ -171,31 +172,35 @@ header p{
 font-size:18px;
 }
 
-.hero h2{
-font-size:30px;
-}
-
-nav{
-padding:15px;
+section{
+margin:20px 15px;
+padding:25px;
 }
 
 nav a{
 display:inline-block;
 margin:8px 10px;
+font-size:16px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+h2{
+font-size:26px;
+}
+
+p,ul li{
 font-size:17px;
 }
 
-section{
-margin:18px;
-padding:25px;
-}
-
 footer h3{
-font-size:24px;
+font-size:22px;
 }
 
 footer p{
-font-size:16px;
+font-size:17px;
 }
 
 }
@@ -203,9 +208,7 @@ font-size:16px;
 </style>
 </head>
 
-<body>
-
-<!-- HEADER -->
+<body id="top">
 
 <header>
 
@@ -214,8 +217,6 @@ font-size:16px;
 <p>Enterprise IT Solutions & Mobility Management</p>
 
 </header>
-
-<!-- NAVIGATION -->
 
 <nav>
 
@@ -227,8 +228,6 @@ font-size:16px;
 <a href="#terms">Terms</a>
 
 </nav>
-
-<!-- HOME -->
 
 <section id="home" class="hero">
 
@@ -253,8 +252,6 @@ securely, and professionally for long-term operational growth.
 
 </section>
 
-<!-- ABOUT -->
-
 <section id="about">
 
 <h2>About Us</h2>
@@ -276,7 +273,6 @@ and secure device provisioning.
 <h3>We aim to implement scalable and secure solutions using:</h3>
 
 <ul>
-
 <li>Android Enterprise</li>
 <li>Mobile Device Management (MDM)</li>
 <li>Zero-Touch Enrollment</li>
@@ -284,12 +280,9 @@ and secure device provisioning.
 <li>Business Device Provisioning</li>
 <li>Cloud-based administration tools</li>
 <li>Enterprise mobility solutions</li>
-
 </ul>
 
 </section>
-
-<!-- SERVICES -->
 
 <section id="services">
 
@@ -314,13 +307,11 @@ managed provisioning, and centralized policy management.
 <p>Deployment and configuration support for:</p>
 
 <ul>
-
 <li>ManageEngine MDM</li>
 <li>Android Enterprise</li>
 <li>Business policy management</li>
 <li>Device compliance</li>
 <li>Remote administration</li>
-
 </ul>
 
 <h3>Device Enrollment & Provisioning</h3>
@@ -328,12 +319,10 @@ managed provisioning, and centralized policy management.
 <p>Support for:</p>
 
 <ul>
-
 <li>Zero-Touch enrollment guidance</li>
 <li>Samsung Knox Mobile Enrollment (KME)</li>
 <li>Enterprise provisioning workflows</li>
 <li>Business device setup</li>
-
 </ul>
 
 <h3>IT Administration & Operations</h3>
@@ -345,26 +334,20 @@ for secure workforce deployment.
 
 </section>
 
-<!-- WHY CHOOSE -->
-
 <section>
 
 <h2>Why Choose MRAPGROUP</h2>
 
 <ul>
-
 <li>Enterprise-focused approach</li>
 <li>Scalable deployment planning</li>
 <li>Secure device management practices</li>
 <li>Centralized administration model</li>
 <li>Professional onboarding processes</li>
 <li>Long-term operational planning</li>
-
 </ul>
 
 </section>
-
-<!-- ORGANIZATION -->
 
 <section>
 
@@ -382,8 +365,6 @@ for secure workforce deployment.
 
 </section>
 
-<!-- CONTACT -->
-
 <section id="contact">
 
 <h2>Contact Us</h2>
@@ -396,8 +377,6 @@ Android Enterprise setup, or IT administration support,
 feel free to contact us.
 </p>
 
-<p><strong>Email:</strong> anujprasad586@gmail.com</p>
-
 <p><strong>Email:</strong> ITAdmin@mrapgroup.in</p>
 
 <p><strong>Contact Person:</strong> Anuj Prasad Sinha</p>
@@ -407,8 +386,6 @@ feel free to contact us.
 </div>
 
 </section>
-
-<!-- PRIVACY -->
 
 <section id="privacy">
 
@@ -427,13 +404,11 @@ to third parties.
 <p>Information shared with us is used only for:</p>
 
 <ul>
-
 <li>Business communication</li>
 <li>Enterprise onboarding</li>
 <li>Technical support</li>
 <li>Service coordination</li>
 <li>Device management operations</li>
-
 </ul>
 
 <p>
@@ -442,8 +417,6 @@ to protect organizational data.
 </p>
 
 </section>
-
-<!-- TERMS -->
 
 <section id="terms">
 
@@ -460,8 +433,6 @@ policies, and operational procedures when required.
 </p>
 
 </section>
-
-<!-- FUTURE -->
 
 <section>
 
@@ -481,13 +452,9 @@ for long-term operational growth and secure digital transformation.
 
 </section>
 
-<!-- FOOTER -->
-
-<footer>
+<footer id="bottom">
 
 <h3>MRAPGROUP Enterprise IT Solutions & Mobility Management</h3>
-
-<p>Email: anujprasad586@gmail.com</p>
 
 <p>Email: ITAdmin@mrapgroup.in</p>
 
@@ -497,40 +464,24 @@ for long-term operational growth and secure digital transformation.
 
 </footer>
 
-<!-- GO TO TOP BUTTON -->
+<button class="button-top" onclick="scrollToTop()">↑</button>
 
-<button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
-
-<!-- JAVASCRIPT -->
+<button class="button-bottom" onclick="scrollToBottom()">↓</button>
 
 <script>
 
-let mybutton = document.getElementById("topBtn");
-
-window.onscroll = function() {
-scrollFunction();
-};
-
-function scrollFunction() {
-
-if (
-document.body.scrollTop > 300 ||
-document.documentElement.scrollTop > 300
-) {
-mybutton.style.display = "block";
-} else {
-mybutton.style.display = "none";
-}
-
-}
-
-function topFunction() {
-
+function scrollToTop(){
 window.scrollTo({
 top:0,
 behavior:'smooth'
 });
+}
 
+function scrollToBottom(){
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:'smooth'
+});
 }
 
 </script>
