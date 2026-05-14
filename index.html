@@ -68,6 +68,8 @@ padding:35px;
 background:white;
 border-radius:14px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
+/* Adds padding at the top when navigating using the menu links */
+scroll-margin-top: 80px; 
 }
 
 .hero{
@@ -146,6 +148,9 @@ cursor:pointer;
 box-shadow:0 4px 10px rgba(0,0,0,0.3);
 z-index:9999;
 transition:0.3s;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .button-top:hover,
@@ -203,6 +208,18 @@ footer p{
 font-size:17px;
 }
 
+.button-top,
+.button-bottom{
+width:45px;
+height:45px;
+font-size:20px;
+right:15px;
+}
+
+.button-top{
+bottom:75px;
+}
+
 }
 
 </style>
@@ -211,67 +228,51 @@ font-size:17px;
 <body id="top">
 
 <header>
-
 <h1>MRAPGROUP</h1>
-
 <p>Enterprise IT Solutions & Mobility Management</p>
-
 </header>
 
 <nav>
-
 <a href="#home">Home</a>
 <a href="#about">About Us</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact Us</a>
 <a href="#privacy">Privacy Policy</a>
 <a href="#terms">Terms</a>
-
 </nav>
 
 <section id="home" class="hero">
-
 <h2>Welcome to MRAPGROUP</h2>
-
 <p>
 MRAPGROUP is an organization focused on enterprise IT solutions,
 Android Enterprise mobility management, device deployment,
 and centralized business technology operations.
 </p>
-
 <p>
 We assist organizations with secure device management,
 Android Enterprise onboarding, MDM deployment,
 enterprise provisioning, and scalable IT infrastructure solutions.
 </p>
-
 <p>
 Our objective is to help businesses manage devices efficiently,
 securely, and professionally for long-term operational growth.
 </p>
-
 </section>
 
 <section id="about">
-
 <h2>About Us</h2>
-
 <h3>Who We Are</h3>
-
 <p>
 MRAPGROUP is an MSME-registered organization working toward
 enterprise mobility management and business technology solutions.
 </p>
-
 <p>
 We are building enterprise-grade deployment and management systems
 for Android devices used in business operations,
 workforce productivity, centralized administration,
 and secure device provisioning.
 </p>
-
 <h3>We aim to implement scalable and secure solutions using:</h3>
-
 <ul>
 <li>Android Enterprise</li>
 <li>Mobile Device Management (MDM)</li>
@@ -281,31 +282,22 @@ and secure device provisioning.
 <li>Cloud-based administration tools</li>
 <li>Enterprise mobility solutions</li>
 </ul>
-
 </section>
 
 <section id="services">
-
 <h2>Our Services</h2>
-
 <h3>Enterprise Mobility Management</h3>
-
 <p>
 We help organizations deploy and manage Android devices
 using modern enterprise mobility management solutions.
 </p>
-
 <h3>Android Enterprise Deployment</h3>
-
 <p>
 Support for Android Enterprise onboarding,
 managed provisioning, and centralized policy management.
 </p>
-
 <h3>Mobile Device Management (MDM)</h3>
-
 <p>Deployment and configuration support for:</p>
-
 <ul>
 <li>ManageEngine MDM</li>
 <li>Android Enterprise</li>
@@ -313,31 +305,23 @@ managed provisioning, and centralized policy management.
 <li>Device compliance</li>
 <li>Remote administration</li>
 </ul>
-
 <h3>Device Enrollment & Provisioning</h3>
-
 <p>Support for:</p>
-
 <ul>
 <li>Zero-Touch enrollment guidance</li>
 <li>Samsung Knox Mobile Enrollment (KME)</li>
 <li>Enterprise provisioning workflows</li>
 <li>Business device setup</li>
 </ul>
-
 <h3>IT Administration & Operations</h3>
-
 <p>
 Business-focused device administration and operational support
 for secure workforce deployment.
 </p>
-
 </section>
 
 <section>
-
 <h2>Why Choose MRAPGROUP</h2>
-
 <ul>
 <li>Enterprise-focused approach</li>
 <li>Scalable deployment planning</li>
@@ -346,63 +330,42 @@ for secure workforce deployment.
 <li>Professional onboarding processes</li>
 <li>Long-term operational planning</li>
 </ul>
-
 </section>
 
 <section>
-
 <h2>Organization Information</h2>
-
 <p><strong>Organization Name:</strong> MRAPGROUP</p>
-
 <p><strong>Business Type:</strong> MSME Registered Organization</p>
-
 <p><strong>Contact Person:</strong> Anuj Prasad Sinha</p>
-
 <p><strong>Official Email:</strong> ITAdmin@mrapgroup.in</p>
-
 <p><strong>Location:</strong> BIT Ranchi, India</p>
-
 </section>
 
 <section id="contact">
-
 <h2>Contact Us</h2>
-
 <div class="contact-box">
-
 <p>
 For enterprise onboarding, business mobility solutions,
 Android Enterprise setup, or IT administration support,
 feel free to contact us.
 </p>
-
 <p><strong>Email:</strong> ITAdmin@mrapgroup.in</p>
-
 <p><strong>Contact Person:</strong> Anuj Prasad Sinha</p>
-
 <p><strong>Organization:</strong> MRAPGROUP</p>
-
 </div>
-
 </section>
 
 <section id="privacy">
-
 <h2>Privacy Policy</h2>
-
 <p>
 MRAPGROUP respects the privacy of users,
 customers, and business partners.
 </p>
-
 <p>
 We do not sell or distribute confidential business information
 to third parties.
 </p>
-
 <p>Information shared with us is used only for:</p>
-
 <ul>
 <li>Business communication</li>
 <li>Enterprise onboarding</li>
@@ -410,66 +373,49 @@ to third parties.
 <li>Service coordination</li>
 <li>Device management operations</li>
 </ul>
-
 <p>
 We implement reasonable administrative and technical measures
 to protect organizational data.
 </p>
-
 </section>
 
 <section id="terms">
-
 <h2>Terms of Service</h2>
-
 <p>
 By using MRAPGROUP services or communicating with our organization,
 you agree to use the services only for lawful business purposes.
 </p>
-
 <p>
 MRAPGROUP reserves the right to modify or update services,
 policies, and operational procedures when required.
 </p>
-
 </section>
 
 <section>
-
 <h2>Future Vision</h2>
-
 <p>
 MRAPGROUP aims to expand into enterprise mobility,
 centralized device administration,
 secure Android deployments,
 and scalable business technology solutions.
 </p>
-
 <p>
 We are committed to building professional enterprise infrastructure
 for long-term operational growth and secure digital transformation.
 </p>
-
 </section>
 
 <footer id="bottom">
-
 <h3>MRAPGROUP Enterprise IT Solutions & Mobility Management</h3>
-
 <p>Email: ITAdmin@mrapgroup.in</p>
-
 <p>Location: BIT Ranchi, India</p>
-
 <p>© MRAPGROUP. All rights reserved.</p>
-
 </footer>
 
 <button class="button-top" onclick="scrollToTop()">↑</button>
-
 <button class="button-bottom" onclick="scrollToBottom()">↓</button>
 
 <script>
-
 function scrollToTop(){
 window.scrollTo({
 top:0,
@@ -483,7 +429,6 @@ top:document.body.scrollHeight,
 behavior:'smooth'
 });
 }
-
 </script>
 
 </body>
