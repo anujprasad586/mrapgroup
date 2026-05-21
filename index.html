@@ -107,6 +107,52 @@ margin-bottom:10px;
 font-size:18px;
 }
 
+/* Enrollment media gallery layout */
+.enrollment-gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 25px;
+margin-top: 25px;
+justify-content: center;
+}
+
+.enrollment-card {
+background: #ffffff;
+border: 1px solid #ddd;
+border-radius: 12px;
+padding: 20px;
+flex: 1;
+min-width: 280px;
+max-width: 450px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.enrollment-card h4 {
+margin-top: 0;
+margin-bottom: 15px;
+color: #0d1b2a;
+font-size: 20px;
+border-bottom: 2px solid #eef4ff;
+padding-bottom: 8px;
+width: 100%;
+}
+
+.enrollment-img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Adjust size for the solo QR image card */
+.qr-specific {
+max-width: 220px;
+}
+
 .contact-box{
 background:#eef4ff;
 padding:25px;
@@ -220,6 +266,15 @@ right:15px;
 bottom:75px;
 }
 
+.enrollment-gallery {
+flex-direction: column;
+align-items: center;
+}
+
+.enrollment-card {
+max-width: 100%;
+}
+
 }
 
 </style>
@@ -296,6 +351,28 @@ using modern enterprise mobility management solutions.
 Support for Android Enterprise onboarding,
 managed provisioning, and centralized policy management.
 </p>
+
+<!-- New Code block displaying both of your setup options neatly -->
+<h3>Device Enrollment & Provisioning Reference</h3>
+<p>Deploy Corporate Owned Android devices seamlessly using our centralized QR setup configuration maps:</p>
+
+
+<div class="enrollment-gallery">
+  <!-- Card for the High Resolution Standalone QR Code -->
+  <div class="enrollment-card">
+    <h4>Android 9.0 or later (Direct QR Code)</h4>
+    <img src="qr-code.png" alt="High-Res Setup QR Code" class="enrollment-img qr-specific">
+    <p style="font-size:14px; margin-top:15px; color:#555;">Scan directly with a fresh out-of-the-box or factory-reset business device running Android 9.0+.</p>
+  </div>
+
+  <!-- Card for your Mobile App Setup Screen Capture -->
+  <div class="enrollment-card">
+    <h4>Console Setup Layout View</h4>
+    <img src="enrollment-screenshot.jpg" alt="Android Management Enrollment Screen" class="enrollment-img">
+    <p style="font-size:14px; margin-top:15px; color:#555;">Mobile console workflow for full device management deployment assignments.</p>
+  </div>
+</div>
+
 <h3>Mobile Device Management (MDM)</h3>
 <p>Deployment and configuration support for:</p>
 <ul>
@@ -305,7 +382,7 @@ managed provisioning, and centralized policy management.
 <li>Device compliance</li>
 <li>Remote administration</li>
 </ul>
-<h3>Device Enrollment & Provisioning</h3>
+<h3>Device Enrollment & Provisioning Workflows</h3>
 <p>Support for:</p>
 <ul>
 <li>Zero-Touch enrollment guidance</li>
@@ -432,4 +509,5 @@ behavior:'smooth'
 </script>
 
 </body>
-</html>
+  </html>
+  
